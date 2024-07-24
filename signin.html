@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn/LogIn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logostuff/maroon-high-resolution-logo-transparent-small.png"  class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li id="lg-bag"><a class="active" href="signin.html"><i class="fa-solid fa-user"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section class="login-register section--lg">
+        <div class="login-register__container container grid">
+            <div class="login">
+              <h3 class="section__title">Login</h3>
+  
+              <form action="" class="form grid">
+                <input type="email" 
+                 class="form__input" 
+                 placeholder="Your Email" required id="yourmail" />
+  
+                 <input type="password" 
+                 class="form__input" 
+                 placeholder="Your Password" required id="yourpass" />
+                
+  
+                 <!-- <div class="form__btn">
+                  <button class="btn"><a href="index.html" style="text-decoration: none; color: white;" id="submit1" onclick="validate()">Login</a></button>
+                 </div> -->
+                 <input type="url" value="Login" id="submit1" onclick="validate()" class="btn"  />
+                 
+  
+  
+              </form>
+            </div>
+  
+             <div class="register">
+              <h3 class="section__title">Create an Account</h3>
+  
+              <form action="" class="form grid">
+  
+                <input type="text" 
+                class="form__input" 
+                placeholder="Username" required id="t1"/>
+  
+                <input type="email" 
+                 class="form__input" 
+                 placeholder="Your Email" required id="t2"/>
+  
+                 <input type="password" 
+                 class="form__input" 
+                 placeholder="Your Password" required id="t4"/>
+  
+                 <input type="password" 
+                 class="form__input" 
+                 placeholder="Confirm Password" required id="t5"/>
+  
+                 <!-- <div class="form__btn">
+                  <button class="btn">Submit & Register</button>
+                 </div> -->
+                 <input type="submit" value="Register" class="btn" onclick="registration()">
+  
+  
+              </form>
+            </div> 
+          </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="logostuff/maroon-high-resolution-logo-black-transparent.png" alt="" height="100px">
+            <h4>Contact us</h4>
+            <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App store or Google Play</p>
+            <div class="row">
+                <img src="images/pay/app.jpg" alt="">
+                <img src="images/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="images/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> 2024, FEE PROJECT - HTML CSS JAVASCRIPT</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/238260d80b.js" crossorigin="anonymous"></script>
+</body>
+</html>
